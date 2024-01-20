@@ -8,11 +8,27 @@
 /*
 Colors used
 
-Primary Color (Light Grey): #cddce1;
+Primary Color (Light Grey): #C4DEDB;
 Secondary Color (Light Blue Grey): #6f9da8;
 Link Active (Shady Seafoam): #357b70;
 Link, Visited (Dark Grey: #394d59;
 */
+
+root {
+  --light-grey: #cddce1;
+--light-bluegrey: #6f9da8;
+--shady-seafoam: #357b70;
+--dark-grey: #394d59;
+}
+
+html {
+  height: 100%;
+}
+
+
+main {
+  margin-bottom: 8rem;
+}
   
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,7 +36,10 @@ body {
     font-size: 16px;
     line-height: 1.6;
 
-    background-color: #cddce1;
+    background: linear-gradient(180deg, hsla(173, 28%, 82%, 1) 0%, hsla(191, 30%, 61%, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
 }
 
 h1 {
@@ -31,6 +50,11 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: 400;
+}
+
+.page_logo {
+  height: 3rem;
+  width: 1rem;
 }
 
 a {
@@ -92,6 +116,10 @@ button:focus,
     opacity: 0.8;
 }
 
+.cv-button {
+  margin-bottom: 1rem;
+}
+
 .button__secondary {
     background-color: #548b9d;
     color: #000;
@@ -99,6 +127,11 @@ button:focus,
 
 .navigation-list__item--active {
     text-decoration: none;
+}
+
+.skills-table {
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .profile__portrait {
@@ -137,6 +170,7 @@ button:focus,
     display: flex;
     width: 100%;
     padding: 20px;
+    border-bottom: 2px solid #394d59;
 }
 
 .page-header__item {
@@ -167,10 +201,12 @@ button:focus,
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .grid__item {
-    background-color: lightgray;
+    background-color: #f2f2f2;
     padding: 10px;
 }
 
@@ -190,7 +226,8 @@ button:focus,
 }
 
 #logo {
-    width: 200px;
+  height: 150px;
+    width: 1rem;
 }
 
 @media all and (max-width: 500px) {
