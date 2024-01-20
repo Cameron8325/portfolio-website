@@ -8,7 +8,7 @@
 /*
 Colors used
 
-Primary Color (Light Grey): #cddce1;
+Primary Color (Light Grey): #C4DEDB;
 Secondary Color (Light Blue Grey): #6f9da8;
 Link Active (Shady Seafoam): #357b70;
 Link, Visited (Dark Grey: #394d59;
@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
 
-    background-color: #cddce1;
+    background: linear-gradient(180deg, hsla(173, 28%, 82%, 1) 0%, hsla(191, 30%, 61%, 1) 100%);
 }
 
 h1 {
