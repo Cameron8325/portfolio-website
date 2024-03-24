@@ -77,7 +77,8 @@ a:hover {
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   /* Define animation for sliding */
   animation: slideIn 0.3s forwards ease-in-out;
 }
@@ -265,6 +266,7 @@ a:hover {
 
 .check-link {
   margin-top: 10%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,12 +418,8 @@ a:hover {
     position: relative;
   }
 
-  .check-link {
-    position: absolute; /* Position the element absolutely */
-    bottom: 0; /* Align the element to the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
-    padding-bottom: 5%;
+  .spacer {
+    height: 15vh
   }
   
 }
@@ -463,6 +461,10 @@ a:hover {
   }
 
   .contact-form {
+    max-width: 80%;
+  }
+
+  #about {
     max-width: 80%;
   }
 
