@@ -4,62 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+    <title>Michael Smith - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.production.css"/>
 </head>
 
 <body>
-    <main>
-        <header class="page-header">
-
-            <img src="img/spaceman.png" alt="astronaut" class="page-header__item" id="logo">
-
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </header>
-
-    </main>
-
-    <section class="profile">
-        <img src="img/profile-portrait.jpg" class="profile__portrait" alt="Cameron Smith Portrait">
-        <h1>Hello World!</h1>
-        <h2>My name is Cameron Smith! I am a <span>web</span> developer from America.</h2>
-        <a href="work.html">Check out some of my code.</a>
-    </section>
-
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <!--Github logo-->
-            <a href="https://github.com/Cameron8325"> <img src="img/github-logo.svg" alt="github-logo"> </a>
-            <!--Twitter logo-->
-            <img src="img/twitter-logo.svg" alt="twitter-logo">
-            <!--LinkedIn logo-->
-            <img src="img/linkedin-logo.svg" alt="linkedin-logo">
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="navbar-brand">
+          <img src="img/logo2.png" alt="Logo" />
         </div>
-    </footer>
-    
-    <script src="js/tota11y.min.js"></script>
+        <div class="hamburger" onclick="toggleNavbar()" aria-label="Toggle Navigation">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="navbar-links" aria-label="Navigation Links">
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <div class="menu-links" id="active" aria-label="Menu Links">
+        <div class="item armed"><a href="work.html">Work</a></div>
+        <div class="item armed"><a href="contact.html">Contact</a></div>
+        <div class="item armed"><a href="about.html">About</a></div>
+    </div>
 
+    <!-- Main Content -->
+    <div class="container" aria-labelledby="index">
+        <h1 class="welcome">Welcome to My Portfolio</h1>
+        <div class="content" id="index">
+            <section class="profile">
+                <img src="img/profile-portrait.jpg" class="profile__portrait" alt="Cameron Smith Portrait">
+                <div class="profile-info">
+                    <h1>Hello World!</h1>
+                    <h2>My name is Cameron Smith! I am a <span>web</span> developer from America.</h2>
+                    <p>Hello, I'm Michael Smith, a versatile professional with a background in manufacturing operations, IT, and client services. From optimizing production efficiency as a Filler Operator/Safety Rep at Kraft Heinz to mastering new systems in manufacturing at ZM Sheet Metal, I've honed skills in problem-solving, collaboration, and quality assurance. As a former Help Desk Specialist for WSP/FEMA, my technical support and customer service expertise further solidified my adaptability and learning agility. Now, my goal is to transition into software engineering, drawing on my diverse experiences to offer unique perspectives in problem-solving and efficient system optimization. I'm eager to bring my skills to a professional environment that values continuous learning and growth.</p>
+                </div>
+            </section>
+        </div>
+        <div class="check-link">
+            <a href="work.html">Check out some of my code.</a>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
