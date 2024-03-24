@@ -1,106 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work - Michael Smith Portfolio</title>
+    <link rel="stylesheet" href="css/styles.production.css"/>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
-</head>
+  <body>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="navbar-brand">
+        <img src="img/logo2.png" alt="Logo" />
+      </div>
+      <div class="hamburger" onclick="toggleNavbar()" aria-label="Toggle Navigation">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+    <div class="menu-links" id="active" aria-label="Menu Links">
+      <div class="item armed"><a href="index.html">Home</a></div>
+      <div class="item armed"><a href="contact.html">Contact</a></div>
+      <div class="item armed"><a href="about.html">About</a></div>
+    </div>
 
-<body>
-    <main>
-        <header class="page-header">
+    <!-- Main Content -->
+    <div class="container">
+      <h2>Projects</h2>
 
-            <img src="img/spaceman.png" alt="astronaut" class="page-header__item" id="logo">
+      <div class="content" id="work">
+        <!--Pokédex App-->
+        <div class="project">
+          <h2>Pokédex App</h2>
+          <div class="project-description">
+            <p>
+              The Pokedex App is a simple web application that allows users to
+              explore information about various Pokémon. It demonstrates
+              proficiency in JavaScript, DOM manipulation, API integration, and
+              other web development skills learned during the course.
+            </p>
+            <a href="img/pokeDex.png" target="_blank">
+              <img src="img/pokeDex.png" alt="PokeDex App Screenshot" />
+            </a>
+          </div>
 
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item--active">Work</a>
-                      </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <section class="page-footer">
-            <h1>Work</h1>
-            <div class="grid">
-                <div class="grid__item">
-                    <h2>Simple Js App</h2>
-                    <p>
-                        In this project, we learned to use DOM manipulation and API fetching to create a simple Pokedex app. 
-                    </p>
-                    <a href="https://github.com/Cameron8325/simple-js-app">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>MyFlix Backend</h2>
-                    <p>
-                        This is the server side application for MyFlix, a movie database application. It includes the backend API for managing users, movies, and user interactions.
-                    </p>
-                    <a href="https://github.com/Cameron8325/MyFlix">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>MyFlix Client Side</h2>
-                    <p>
-                        The MyFlix client-side is a React-based web application. The application features a responsive design, user authentication, and dynamic routing.
-                    </p>
-                    <a href="https://github.com/Cameron8325/myFlix-client">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Meet App</h2>
-                    <p>
-                        A serverless, progressive web application (PWA) made with React using test-driven development (TDD). The application utilizes the AWS Cloud for serverless functions and the Google Calendar API to fetch upcoming events.
-                    </p>
-                    <a href="https://github.com/Cameron8325/Meet">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Native React App</h2>
-                    <p>
-                       I am currently learning React Native and Native App Developement. This spot will be reserved for that project.
-                    </p>
-                    <a href="#">Read my latest blog post</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Your Project?</h2>
-                    <p>
-                        I would love to become a useful asset for your project! I bring innovative and creative problem solving, along with an open mind and aptitude to learn more technologies.
-                    </p>
-                    <a href="contact.html">Contact me</a>
-                </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: HTML, CSS, JavaScript, Bootstrap, jQuery,
+                PokeAPI</small
+              >
             </div>
-        </section>
-
-    </main>
-
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <!--Github logo-->
-            <a href="https://github.com/Cameron8325"> <img src="img/github-logo.svg" alt="github-logo"> </a>
-            <!--Twitter logo-->
-            <img src="img/twitter-logo.svg" alt="twitter-logo">
-            <!--LinkedIn logo-->
-            <img src="img/linkedin-logo.svg" alt="linkedin-logo">
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Cameron8325/simple-js-app"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://cameron8325.github.io/simple-js-app/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
         </div>
-    </footer>
-    
-    <script src="js/tota11y.min.js"></script>
 
-</body>
+        <!--Movie API-->
+        <div class="project">
+          <h2>MyFlix Movie API</h2>
+          <div class="project-description">
+            <p>
+              This is the server side application for MyFlix, a movie database
+              application. It includes the backend API for managing users,
+              movies, and user interactions.
+            </p>
+            <a href="" target="_blank">
+              <img src="img/movieAPI.jpg" alt="Movie API App Screenshot" />
+            </a>
+          </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: Node.js, Express.js, MongoDB, Mongoose,
+                Passport.js, JWT (JSON Web Tokens), CORS, Body-parser,
+                Morgan.</small
+              >
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Cameron8325/MyFlix" target="_blank"
+                >GitHub</a
+              >
+              <a href="https://myflix-mcs.netlify.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
 
+        <!--MyFlix React-->
+        <div class="project">
+          <h2>MyFlix React UI</h2>
+          <div class="project-description">
+            <p>
+              The MyFlix client-side application is a React-based web
+              application that allows users to explore a collection of movies,
+              manage their profiles, and interact with their favorite movies.
+              The application features a responsive design, user authentication,
+              and dynamic routing.
+            </p>
+            <a href="img/reactFE.png" target="_blank">
+              <img src="img/reactFE.png" alt="App Screenshot" />
+            </a>
+          </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: React, React Bootstrap, MyFlix Movie
+                API</small
+              >
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Cameron8325/MyFlix" target="_blank"
+                >GitHub</a
+              >
+              <a href="https://myflix-mcs.netlify.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--Meet App-->
+        <div class="project">
+          <h2>Meet App</h2>
+          <div class="project-description">
+            <p>
+              A serverless, progressive web application (PWA) made with React
+              using test-driven development (TDD). The application utilizes the
+              AWS Cloud for serverless functions and the Google Calendar API to
+              fetch upcoming events.
+            </p>
+            <a href="img/meetApp.png" target="_blank">
+              <img src="img/meetApp.png" alt="Meet App Screenshot" />
+            </a>
+          </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: AWS, Google OAuth, Google Calendar API,
+                React, React Router, Recharts, Jest-Cucumber</small
+              >
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Cameron8325/Meet" target="_blank"
+                >GitHub</a
+              >
+              <a href="https://cameron8325.github.io/Meet/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--MyFlix Angular-->
+        <div class="project">
+          <h2>MyFlix Angular UI</h2>
+          <div class="project-description">
+            <p>
+              The AngularFlix client-side application is a web platform enabling
+              users to browse a diverse movie collection, manage profiles, and
+              interact with favorite films. This Angular-powered application
+              boasts responsive design, user authentication, and dynamic routing
+              for seamless navigation.
+            </p>
+            <a href="img/angularFE.png" target="_blank">
+              <img src="img/angularFE.png" alt="App Screenshot" />
+            </a>
+          </div>
+          <div class="card-footer">
+            <small
+              >Technologies Used: Typescript, Typedoc, Angular, Angular Material,
+              Jasmine, Karma, MyFlix Movie API</small
+            >
+            <div class="project-info"></div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Cameron8325/myFlix-Angular"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://cameron8325.github.io/myFlix-Angular/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--React Native Chat App-->
+        <div class="project">
+          <h2>React Native Chat App</h2>
+          <div class="project-description">
+            <p>
+              A mobile chat application using React Native, providing users with
+              a seamless chat interface along with the ability to share images
+              and locations.
+            </p>
+            <div class="image-container">
+              <a href="img/nativeApp.png" target="_blank">
+                <img src="img/nativeApp.png" alt="App Screenshot" />
+              </a>
+              <a href="img/nativeApp2.jpg" target="_blank">
+                <img src="img/nativeApp2.jpg" alt="App Screenshot" />
+              </a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: React Native, Expo, Google Firestore
+                Database and Firebase Authentication, Gifted Chat</small
+              >
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Cameron8325/ChatApp" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--Your Project?-->
+        <div class="project">
+          <h2>Your Project?</h2>
+          <div class="project-description">
+            <p>
+              I aim to be a valuable asset to your project, bringing innovative
+              solutions and creative problem-solving skills. My approach
+              involves maintaining an open mind and a strong willingness to
+              learn new technologies to contribute effectively. I am committed
+              to delivering high-quality work and exceeding expectations by
+              continuously refining my skills and staying updated with industry
+              trends. Technologies used are not limitations but opportunities
+              for growth and enhancement, ensuring comprehensive solutions
+              tailored to your project's needs.
+            </p>
+            <a href="img/logo2.png" target="_blank">
+              <img src="img/logo2.png" alt="App Screenshot" />
+            </a>
+          </div>
+          <div class="card-footer">
+            <div class="project-info">
+              <small
+                >Technologies Used: Any! Proficient in a wide range of
+                technologies and always eager to expand my skill set to cater to
+                the unique requirements of your project.</small
+              >
+            </div>
+            <div class="project-buttons">
+              <a href="contact.html">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
