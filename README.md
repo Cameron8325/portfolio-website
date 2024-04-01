@@ -4,9 +4,9 @@ This is a basic example page showcasing a portfolio, demonstrating proficiency i
 
 ## Languages Used
 
-- HTML: 95.0%
-- CSS: 3.2%
-- JavaScript: 1.8%
+- HTML: 48.3%
+- CSS: 49.7%
+- JavaScript: 2%
 
 ## Project Structure
 
@@ -34,8 +34,6 @@ The project consists of several HTML files:
 - **HTML:** Used for structuring the web pages.
 - **CSS:** Used for styling the web pages.
 - **JavaScript:** Used for adding interactivity to the web pages.
-- **Normalize.css:** CSS reset library to ensure consistent styling across different browsers.
-- **Roboto Font:** Google Font used for typography.
 
 ---
 ## Contributing

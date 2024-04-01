@@ -534,10 +534,6 @@ a:hover {
     display: flex;
   }
 
-  .profile-info {
-    font-size: .85rem;
-  }
-
   .profile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -574,10 +570,6 @@ a:hover {
 }
 
 @media screen and (max-width: 640px) {
-  .profile-info {
-    font-size: .75rem;
-  }
-
   #contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
