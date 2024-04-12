@@ -282,7 +282,6 @@ a:hover {
 
 #about img {
   border-radius: 5%;
-
 }
 
 .about-pic {
@@ -382,6 +381,13 @@ a:hover {
 .submit-button-container {
   display: flex;
   justify-content: flex-end;
+}
+
+#case-container img {
+  border-radius: 5px;
+  height: 300px;
+  margin: 0 auto;
+  min-width: 300px;
 }
 
 
