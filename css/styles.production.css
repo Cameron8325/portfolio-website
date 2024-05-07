@@ -141,7 +141,7 @@ a:hover {
     height: 0;
   }
   to {
-    height: 20vh; /* Change to desired final height */
+    height: 25vh; /* Change to desired final height */
   }
 }
 @keyframes slideIn {
@@ -149,7 +149,7 @@ a:hover {
     height: 0;
   }
   to {
-    height: 20vh; /* Change to desired final height */
+    height: 25vh; /* Change to desired final height */
   }
 }
 
