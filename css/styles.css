@@ -108,7 +108,7 @@ a:hover {
     height: 0;
   }
   to {
-    height: 20vh; /* Change to desired final height */
+    height: 25vh; /* Change to desired final height */
   }
 }
 
@@ -116,7 +116,7 @@ a:hover {
 /* Keyframes for sliding out animation */
 @keyframes slideOut {
   from {
-    height: 20vh; /* Change to desired initial height */
+    height: 25vh; /* Change to desired initial height */
   }
   to {
     height: 0;
