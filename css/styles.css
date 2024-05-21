@@ -295,7 +295,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   border: 2px solid #66FCF1;
   padding: 2%;
@@ -391,6 +391,35 @@ a:hover {
   height: 300px;
   margin: 0 auto;
   min-width: 300px;
+}
+
+#python {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+#python a {
+  display: block;
+}
+
+#python img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  #python {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  #python {
+    grid-template-columns: 1fr;
+  }
 }
 
 
