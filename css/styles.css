@@ -264,6 +264,10 @@ a:hover {
   border-bottom-left-radius: 20px;
 }
 
+.profile-info p {
+  font-size: 1.2rem;
+}
+
 .check-link {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -291,6 +295,10 @@ a:hover {
   margin: 0 auto;
 }
 
+#about-container {
+  font-size: 1.2rem;
+}
+
 #contact {
   display: flex;
   flex-direction: row;
@@ -300,6 +308,10 @@ a:hover {
   border: 2px solid #66FCF1;
   padding: 2%;
   border-radius: 5px;
+}
+
+#contact-p p {
+  font-size: 1.2rem;
 }
 
 .contact-form {
@@ -391,6 +403,10 @@ a:hover {
   height: 300px;
   margin: 0 auto;
   min-width: 300px;
+}
+
+#case-container p {
+  font-size: 1.2rem;
 }
 
 #python {
