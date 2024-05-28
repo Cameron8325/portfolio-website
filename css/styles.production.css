@@ -393,6 +393,10 @@ a:hover {
   min-width: 300px;
 }
 
+#case-container p {
+  font-size: 1.2rem;
+}
+
 #python {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
