@@ -42,107 +42,108 @@
     <div class="container" id="case-container" aria-labelledby="about">
       <h2>Case Study</h2>
       <div class="content" id="about">
+        <h2>From Concept to Code: Creating the myFlix Backend</h2>
+
+        <div class="chapter"><img src="img/heroImage.jpg" /></div>
+
         <h3>Introduction:</h3>
         <p>
-          In the vast landscape of web development, every project embarked upon
-          is an adventure waiting to unfold. Among my endeavors stands the
-          myFlix API, a journey of discovery where challenges were met with
+          Among my earliest endeavors as a budding student of web development
+          stands the myFlix Backend. My very first API and database
+          configuration. A journey of discovery where challenges were met with
           determination, and triumphs celebrated with pride.
         </p>
 
         <h3>Chapter 1: The Spark of Innovation</h3>
         <p>
-          It all began with a spark of innovation, a desire to construct a
-          backend ecosystem where movie enthusiasts could delve into a
-          repository of cinematic marvels. The objective was clear: to build a
-          robust and scalable API that could handle a vast collection of movies,
-          providing users with seamless access to movie details, user reviews,
-          and personalized recommendations. Armed with ambition and a thirst for
-          knowledge, I set out to transform this vision into a tangible reality
-          using Express, MongoDB, and Passport.js.
+          The objective was clear: to build a robust API that could handle a
+          vast collection of movies and provide users with seamless access to
+          movie details. This was my first real taste of full stack web
+          development, and as such I made sure to study the structure and flow
+          of the language. When I’ve taught myself a new language in the past,
+          whether programming or foreign, I focused on understanding how the
+          puzzle pieces fit together instead of learning one block at a time.
+          That experience would soon prove extremely beneficial.
         </p>
-        <img src="img/spark.jpg" />
+        <a href="img/earlyAPI.png" target="_blank">
+          <img src="img/earlyAPI.png" alt="App Screenshot" />
+        </a>
 
         <h3>Chapter 2: Navigating Uncharted Territories</h3>
         <p>
-          As I ventured into the realm of Node.js development, I encountered the
-          formidable challenge of architecting an API for the very first time.
-          Each route became a puzzle to solve, each middleware an adventure into
-          the unexplored depths of backend logic. One of the first hurdles was
-          setting up the server and ensuring secure and efficient data handling.
-          I meticulously researched best practices for RESTful API design and
-          implemented authentication and authorization mechanisms using JSON Web
-          Tokens (JWT). With perseverance as my compass and determination as my
-          guide, I navigated through uncharted territories, one line of code at
-          a time.
+          I started the journey simple: I wrote out which libraries,
+          middlewares, and database I wanted to use. I settled on Express,
+          MongoDB, Passport.js, and Morgan. I took some time to read the
+          documentation before I felt confident enough to set up my (first ever)
+          API index.js file. While importing the proper packages, I knew I would
+          need some sample data to test my endpoints with. After all, what good
+          is serving a request if there is nothing to serve? Whipping up an
+          array of movie objects flew by and before I knew it, I was ready to
+          start stitching together my first endpoint!
         </p>
         <img src="img/explore.jpg" />
 
         <h3>Chapter 3: The Dance of Error and Progress</h3>
         <p>
-          In the intricate dance of error and progress, every stumble became a
-          lesson learned, and every bug a catalyst for improvement. Initially
-          entangled in a labyrinth of bugs, each one threatening to derail my
-          journey, I learned to embrace errors not as hindrances but as stepping
-          stones towards mastery. One of the significant challenges was ensuring
-          that the API endpoints returned the correct data in the expected
-          format. There were times when the data returned didn't match the
-          structure required by the frontend, leading to unexpected results.
-          Through careful debugging, learning from documentation, and seeking
-          advice from mentors, I refined my understanding of handling data with
-          MongoDB and Express. Guided by mentors and seasoned by experience, I
-          turned these errors into opportunities for growth.
+          Once the first endpoint was created, the rest was practice. I would
+          take time to reflect on the functionality I wanted for my app,
+          ensuring that I covered every base. I took a look at the console to
+          see if there were any errors, and to my surprise there were none! I
+          opened Postman to begin testing the endpoints with different headers
+          and credentials. I was soon met with hurdles that felt like mountains
+          at the time. One of the significant challenges was ensuring that the
+          API endpoints had the proper syntax and followed the model properly.
+          After consulting the vast wealth of knowledge known as Google and AI,
+          I decided I needed a second pair of eyes so I messaged my tutor. Maybe
+          I was too close to the project, maybe I had forgotten a dependency,
+          maybe his seasoned eyes could see something I was overlooking. Sure
+          enough, the problem was discovered, small but humbling nonetheless. A
+          letter had been capitalized where it shouldn’t have been. After a
+          laugh and a correction, everything was ready for production! …Right?
         </p>
-        <img src="img/error.jpg" />
+        <a href="img/authPOST.png" target="_blank">
+          <img src="img/authPOST.png" alt="App Screenshot" />
+        </a>
 
-        <h3>Chapter 4: Crafting the Tapestry of Design</h3>
+        <h3>Chapter 4: Safety First</h3>
         <p>
-          As the scope of my project expanded, so did the challenge of crafting
-          a robust backend architecture. The canvas before me was blank,
-          awaiting the strokes of innovation and ingenuity. With trepidation and
-          excitement intertwined, I embarked on the journey of design, weaving
-          together elements of efficiency and scalability to create a tapestry
-          that would support the intricate needs of the application. I designed
-          the database schema from scratch, ensuring it could handle various
-          data relationships and provide efficient querying capabilities. By
-          leveraging MongoDB's flexibility and scalability, I created a database
-          that could grow with the application.
+          Ok, so I may have been jumping the gun. One hurdle still remained in
+          my learning. The last, but certainly not least important part of web
+          development: Security. The “Who are you” and “What are you allowed to
+          do” of an application, or in layman’s terms, Authentication and
+          Authorization. Not only did I need to add this detrimental aspect, but
+          I needed to persist the login so users wouldn’t be prompted to enter
+          their credentials for every new page. Luckily, there were tools
+          available for such a task. These tools were staple names: bcrypt,
+          passport, and express-validator. By implementing these proven building
+          bricks, my site was finally adhering to CORS policies, safe from
+          threat, and at last read for production!
         </p>
-        <img src="img/design.jpg" />
 
-        <h3>Chapter 5: The Triumph of Resilience</h3>
-        <p>
-          Through the peaks and valleys of the development journey, one thing
-          remained steadfast: resilience. With every hurdle surmounted and every
-          obstacle conquered, I emerged stronger and more determined than
-          before. A particularly challenging phase was implementing user
-          authentication and authorization. Ensuring secure and reliable access
-          to the API required careful planning and robust implementation. I
-          integrated Passport.js for authentication and created custom
-          middleware for authorization, ensuring only authorized users could
-          access certain endpoints. The path was arduous, but the victory was
-          sweet, as the myFlix Backend stood as a testament to perseverance and
-          passion. The final solution not only met but exceeded the project
-          objectives, providing a seamless and efficient user experience.
-        </p>
+        <div class="chapter">
+          <a href="img/dbAuthPOST.png" target="_blank">
+            <img src="img/dbAuthPOST.png" alt="App Screenshot" />
+          </a>
+        </div>
+        <a href="img/bearerToken.png" target="_blank">
+          <img src="img/bearerToken.png" alt="App Screenshot" />
+        </a>
 
         <h3>Conclusion:</h3>
         <p>
-          In the ever-evolving landscape of web development, the creation of the
-          myFlix Backend was not merely a project, but a saga of growth,
-          exploration, and triumph. Through challenges tackled and barriers
-          breached, I pressed forward, fueled by the conviction that with
-          dedication and resolve, any endeavor is within reach. From optimizing
-          database performance to implementing a scalable architecture, each
-          step of the journey was a learning experience that honed my skills and
-          expanded my horizons. As I embark on new adventures in the realm of
-          web development, I carry with me the lessons gleaned and the
-          experiences forged in the crucible of creation, forever shaping the
-          path ahead.
+          This project was a detrimental step for me as a student. Throughout
+          the ups and downs I faced, whether it be a miscased letter or new
+          syntax to learn, I remained hopeful. The experience above is something
+          I will always reflect on: the journey, the learning, and the help I
+          received. These aspects have become the foundation of which I will
+          approach and grow with all future projects. I’m ever curious where
+          my(or your) next project will take me, I look forward to meeting it
+          with an open mind and innovative solutions.
         </p>
         <img src="img/finished-Coding.jpg" />
       </div>
     </div>
+
     <div class="check-link">
       <a href="work.html">Check out some of my code.</a>
     </div>

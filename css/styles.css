@@ -426,6 +426,20 @@ a:hover {
   display: block;
 }
 
+.chapter {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.chapter img {
+  max-width: 60%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 @media (max-width: 1200px) {
   #python {
     grid-template-columns: repeat(2, 1fr);
